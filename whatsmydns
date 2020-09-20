@@ -8,7 +8,7 @@ fi
 domain=$1
 
 if [ $# -gt 1 ]; then
-  type=$2
+  type=$(echo $2 | tr '[a-z]' '[A-Z]')
 else
   type=A
 fi
